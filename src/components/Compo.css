@@ -1,0 +1,184 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.nav-link {
+  width: 100%;
+  display: flex;
+  gap: 50px;
+  text-decoration: none;
+  text-transform: none;
+  background-color: black;
+  padding: 20px;
+  justify-content: center;
+}
+
+.nav-link a {
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+}
+
+.footer {
+  background-color: black;
+  color: white;
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.active {
+  color: red;
+}
+
+.hero-section {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/*-----------------------------------------------------------------------------------------------------*/
+
+.car-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
+  padding: 40px;
+}
+
+.car-div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  justify-content: center;
+}
+
+
+.cart-div{
+    margin-top: 80px;
+}
+
+.car-card {
+  width: 300px;
+
+  padding: 10px;
+  box-shadow: 1px 1px 5px grey;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border-radius: 6px;
+}
+
+.car-card button {
+  width: 100%;
+  padding: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  background-color: rgb(36, 120, 199);
+  color: white;
+  font-size: 16px;
+  border: none;
+}
+
+.car-card img {
+  width: 100%;
+  height: 180px;
+}
+
+.total-price {
+  padding: 8px 15px;
+}
+
+.cart-items {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cart-items div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+select {
+  width: max-content;
+  height: 26px;
+  font-weight: 600;
+  font-size: 16px;
+  border: 1px solid black;
+  border-radius: 4px;
+}
+
+.cart-details {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: burlywood;
+  padding: 20px;
+  width: max-content;
+
+  border-radius: 6px;
+  position: absolute;
+  top: 70px;
+  right: 75px;
+}
+
+/*--------------------------------------------------form-handeling----------------------------------------------------------------*/
+/* 
+.form-handeling{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 1px 1px 5px 3px grey;
+    border-radius: 10px;
+    margin: 50px;
+    padding: 20px 0px;
+}
+
+
+
+.form-handeling form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 15px;
+    align-items: center;
+    width: 100%;
+}
+
+
+.form-handeling form div{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 100%;
+}
+
+
+.form-handeling form div input{
+    width: 100%;
+    height: 37px;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid grey;
+}
+
+
+
+.form-handeling form button{
+    width: 100%;
+    height: 37px;
+    border-radius: 5px;
+}
+ */
