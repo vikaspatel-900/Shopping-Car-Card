@@ -1,6 +1,6 @@
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { removeFromCart,updateQuantity } from '../store/slices/CartSlice';
+import { removeFromCart, updateQuantity } from '../store/slices/CartSlice';
 import './Compo.css'
 
 export default function CarCart() {
@@ -43,7 +43,9 @@ export default function CarCart() {
       <div className='car-div cart-div'>
         {cartItems.map((cart) => {
           return <div className='car-card' key={cart.id}>
-            <img src={cart.image} alt='' />
+            <div className='card-img-div'>
+              <img src={cart.image} alt='' />
+            </div>
             <div className='cart-items'>
               <div>
                 <h3>{cart.name}</h3>
@@ -51,18 +53,18 @@ export default function CarCart() {
                 <p><strong>CC : </strong> {cart.cc}</p>
                 <p><strong>Mileage : </strong> {cart.mileage}</p>
               </div>
-              <select 
-               
-                 value={cart.quantity}
-                  onChange={(e) => handleQuantityChange(cart.id, e.target.value)}
-                >
-                  {[...Array(4).keys()].map((num) => (
-                    <option key={num + 1} value={num + 1}>
-                      Qty. {num + 1}
-                    </option>
-                  ))}
-                  <option value="more">More</option>
-                </select>
+              <select
+
+                value={cart.quantity}
+                onChange={(e) => handleQuantityChange(cart.id, e.target.value)}
+              >
+                {[...Array(4).keys()].map((num) => (
+                  <option key={num + 1} value={num + 1}>
+                    Qty. {num + 1}
+                  </option>
+                ))}
+                <option value="more">More</option>
+              </select>
             </div>
 
             <button onClick={() => dispatch(removeFromCart(cart.id))}>Remove</button>

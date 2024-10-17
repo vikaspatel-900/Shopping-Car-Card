@@ -62,6 +62,9 @@
 }
 
 
+
+
+
 .cart-div{
     margin-top: 80px;
 }
@@ -75,6 +78,11 @@
   flex-direction: column;
   gap: 10px;
   border-radius: 6px;
+  transition: all 0.6s;
+}
+
+.car-card:hover{
+  transform: scale(1.05);
 }
 
 .car-card button {
@@ -88,9 +96,30 @@
   border: none;
 }
 
-.car-card img {
+
+.car-card button:hover{
+   /* border: 2px solid black;
+   background-color: white;
+   color: black; */
+   background-color: rgb(10, 87, 159);
+}
+
+.card-img-div img {
   width: 100%;
-  height: 180px;
+  height: 100%;
+  transition: all 0.6s;
+}
+
+
+.card-img-div img:hover{
+  transform: scale(1.1);
+}
+
+
+.card-img-div{
+  width: 100%;
+  height: 190px;
+  overflow: hidden;
 }
 
 .total-price {
